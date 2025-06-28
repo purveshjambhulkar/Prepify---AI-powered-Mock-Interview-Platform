@@ -16,6 +16,19 @@ Preparing for job interviews can be daunting. Most candidates lack access to per
 
 ---
 
+## 📑 Table of Contents
+
+- [Prepify – AI Powered Mock Interview Platform](#prepify--ai-powered-mock-interview-platform)
+  - [Problem Statement](#problem-statement)
+  - [Solution](#solution)
+  - [Live Project](#live-project)
+  - [Features](#features)
+  - [Screenshots](#screenshots)
+  - [Tech Stack](#tech-stack)
+  - [Getting Started Locally](#getting-started-locally)
+
+---
+
 ## 🌟 Features
 
 - 🎯 Generates **custom interview questions** for the chosen job role using **Gemini AI**.
@@ -24,19 +37,6 @@ Preparing for job interviews can be daunting. Most candidates lack access to per
 - 🤖 Provides **instant AI feedback** on both technical and soft skills.
 - 📚 Shows **model answers** to guide users in structuring their responses.
 - 🔐 Ensures a **secure and private** environment — no media is stored.
-
----
-
-## 📑 Table of Contents
-
-- [🧠 Prepify – AI Powered Mock Interview Platform](#prepify--ai-powered-mock-interview-platform)
-  - [❓ Problem Statement](#problem-statement)
-  - [✅ Solution](#solution)
-  - [🌟 Features](#features)
-  - [📸 Screenshots](#screenshots)
-  - [💻 Tech Stack](#tech-stack)
-  - [🚀 Getting Started Locally](#getting-started-locally)
-  - [🔗 Live Project](#live-project)
 
 ---
 
@@ -75,6 +75,7 @@ Preparing for job interviews can be daunting. Most candidates lack access to per
 
 ```bash
 git clone https://github.com/purveshjambhulkar/Prepify---AI-powered-Mock-Interview-Platform.git
+cd Prepify---AI-powered-Mock-Interview-Platform
 ```
 
 ### 2️⃣ Install Dependencies
@@ -88,8 +89,8 @@ npm install
 Create a `.env.local` file and add the following:
 
 ```env
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=clerk_publishable_key
-CLERK_SECRET_KEY=clerk_secret_key
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
 
 NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
 NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/
@@ -99,10 +100,9 @@ NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
 NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=/
 NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/
 
-NEXT_PUBLIC_DRIZZLE_DB_URL=drizzle_db_url
+NEXT_PUBLIC_DRIZZLE_DB_URL=your_postgresql_connection_string
 
-
-NEXT_PUBLIC_GEMINI_API_KEY=gemini_api_key
+NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key
 
 NEXT_PUBLIC_INTERVIEW_QUESTION_COUNT=5
 
@@ -117,6 +117,6 @@ NEXT_PUBLIC_QUESTION_NOTE="Click on Record Answer when you want to answer the qu
 npm run dev
 ```
 
-Visit: [http://localhost:3000](http://localhost:3000)
+Open your browser at: [http://localhost:3000](http://localhost:3000)
 
 ---
